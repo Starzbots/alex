@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/Alexa
-RUN git clone -b shiken https://github.com/don1900/Alexa /root/Alexa
-WORKDIR /root/ShasaBot
+# Copy Python Requirements to /root/AlexaBot
+RUN git clone -b shiken https://github.com/don1900/AlexaBot /root/AlexaBot
+WORKDIR /root/AlexaBot
 
-#Copy config file to /root/ShasaBott/ShasaBot
-COPY ./Alexa/sample_config.py ./Alexa/config.py* /root/ShasaBot/Alexa/
+#Copy config file to /root/AlexaBot/AlexaBot
+COPY ./AlexaBot/sample_config.py ./AlexaBot/config.py* /root/AlexaBot/AlexaBot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Alexa"]
+CMD ["python3","-m","AlexaBot"]
