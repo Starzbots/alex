@@ -33,6 +33,7 @@ async def save_couple(chat_id: int, date: str, couple: dict):
             "$set": {
                 "couple": lovers
             }
+            
         },
         upsert=True
     )
