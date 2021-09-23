@@ -69,7 +69,7 @@ RUN git clone https://github.com/don1900/AlexaBot /root/AlexaBot
 WORKDIR /root/AlexaBot
 
 #Copy config file to /root/AlexaBot/AlexaBot
-COPY ./AlexaBot/sample_config.py ./AlexaBot/config.py* /root/AlexaBot/Alexabot/
+COPY ./Alexabot/sample_config.py ./AlexaBot/config.py* /root/AlexaBot/Alexabot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
