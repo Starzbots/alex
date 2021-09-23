@@ -45,11 +45,6 @@
          "required": true,
          "value": "801842409"
       },
-      "BOT_ID": {
-         "description": "Your bot ID.. Use any other bot to get it.",
-         "required": true,
-         "value": ""
-      },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
         "value": ""
@@ -188,7 +183,7 @@
       },
       "DATABASE_URI": {
          "description": "Your db url empty this field if you dont have one.",
-         "required": false,
+         "required": true,
          "value": "postgres://lutkhaydbesfiz:98fdcffddc27b79577fc92691cf8eb125eac7f42d7203973e40e26db1fde3a12@ec2-75-101-212-64.compute-1.amazonaws.com:5432/ddv14ad239tl9m"
        },      
       "WALL_API": {
