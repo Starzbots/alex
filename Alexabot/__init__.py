@@ -109,7 +109,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from AlexaBot.config import Development as Config
+    from Alexabot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
