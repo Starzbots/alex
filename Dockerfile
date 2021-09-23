@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/AlexaBot
-RUN git clone -b shiken https://github.com/don1900/Alexa /root/Alexabot
+RUN git clone -b shiken https://github.com/don1900/Alexabot /root/Alexabot
 WORKDIR /root/Alexabot
 
 #Copy config file to /root/AlexaBott/AlexaBot
