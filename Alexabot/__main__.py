@@ -82,12 +82,12 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="❤️ ᴀᴅᴅ Alexaᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❤️", url="t.me/Alexa_X_bot?startgroup=true"),
+            text="❤️ ᴀᴅᴅ Alexaᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❤️", url="t.me/TheAlexa_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="🧐ᴀʙᴏᴜᴛ🧐", callback_data="Alexa_"),
         InlineKeyboardButton(
-            text="🤗ꜱᴜᴘᴘᴏʀᴛ🤗", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="🤗ꜱᴜᴘᴘᴏʀᴛ🤗", url=f"https://t.me/starz_support"
         ),
     ],
     [
@@ -680,7 +680,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "🔥I Am Alive🔥")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "🔥I Am Alive🥲🔥")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
